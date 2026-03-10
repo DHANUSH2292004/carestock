@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>carestock</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="app.css">
+    
+<script>
+    function validateLogin() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Change these credentials as you want
+  var correctUsername = "admin";
+  var correctPassword = "1234";
+
+  if (username === correctUsername && password === correctPassword) {
+    window.location.href = "home.html"; // Redirect to home page
+  } else {
+    document.getElementById("error").innerHTML = "Invalid Username or Password!";
+  }
+}
+</script>
+<body>
+           
+    <div class="firstcontainer">
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+
+  <button onClick="validateLogin()">Login</button>
+  <p id="error" style="color:red"></p>
+  </div>
+
+
+</body>
+</html>

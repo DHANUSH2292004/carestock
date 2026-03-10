@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header class1="header">
+            <img src="logo.png" alt="logo">
+            <p>carestock</p></header>
+            
+        
+    </head>
+    <body class="homepage">  
+    <div class="navbar1">
+        <a href="home.html">HOME</a>
+        <a href="medicines.html">MEDICINES</a>
+        <a href="stock.html">STOCK</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="sales.html">SALES</a>
+        <a href="report.html">REPORT</a>
+        <a href="users.html">USERS</a>
+
+
+    </div>
+
+<title>Stock - Medicine Management System</title>
+<link rel="stylesheet" href="stock.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Medicine Management System</h1>
+<h2>Stock Management</h2>
+
+<div class="form-section">
+
+<input type="text" id="medId" placeholder="Medicine ID">
+<input type="text" id="medName" placeholder="Medicine Name">
+<input type="text" id="batch" placeholder="Batch Number">
+<input type="number" id="quantity" placeholder="Quantity">
+<input type="number" id="purchasePrice" placeholder="Purchase Price">
+<input type="number" id="sellingPrice" placeholder="Selling Price">
+<input type="date" id="expiryDate">
+<input type="text" id="supplier" placeholder="Supplier Name">
+
+<button onclick="addStock()">Add Stock</button>
+
+</div>
+
+<table id="stockTable">
+
+<tr>
+<th>Medicine ID</th>
+<th>Name</th>
+<th>Batch</th>
+<th>Quantity</th>
+<th>Purchase Price</th>
+<th>Selling Price</th>
+<th>Expiry Date</th>
+<th>Supplier</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+</div>
+
+<script src="stock.js"></script>
+
+</body>
+</html>

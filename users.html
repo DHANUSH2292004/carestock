@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <header class="header">
+            <img src="logo.png" alt="logo">
+            <p>carestock</p></header>
+            
+       </head> 
+    
+    <body class1="homepage">  
+    <div class="navbar1">
+        <a href="home.html">HOME</a>
+        <a href="medicines.html">MEDICINES</a>
+        <a href="stock.html">STOCK</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="sales.html">SALES</a>
+        <a href="report.html">REPORT</a>
+        <a href="users.html">USERS</a>
+        <link rel="stylesheet" href="users.css">
+    </div>
+</body>
+    
+        
+<body class="users">
+
+<div class="container">
+    <h2>Patient Details Form</h2>
+  
+    <form id="PatientForm" action="#" method="POST">
+
+        <input type="text" name="patient_id" placeholder="Patient ID" required>
+        <br></br>
+        <input type="text" name="full_name" placeholder="Full Name" required>
+
+        <input type="date" name="dob" required>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <input type="email" name="email" placeholder="Email">
+
+        <textarea name="address" placeholder="Address" rows="3" required></textarea>
+
+        <input type="text" name="blood_group" placeholder="Blood Group (Eg: O+)" required>
+
+        <textarea name="allergies" placeholder="Allergies (if any)" rows="2"></textarea>
+
+        <textarea name="medical_history" placeholder="Medical History" rows="3"></textarea>
+
+        <input type="text" name="doctor_name" placeholder="Assigned Doctor">
+        <br></br>
+        <input type="text" name="emergency_contact" placeholder="Emergency Contact Number" required>
+         <br></br>
+        <button type="submit">Save Patient Details</button>
+<br></br>
+    </form>
+</div>
+<script src="users.js"></script>
+</body>
+</html>

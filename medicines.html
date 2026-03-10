@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="medicines.css">
+    </head>
+    <header class="header">
+            <img src="logo.png" alt="logo">
+            <p>carestock</p></header>
+    <div class="navbar1">
+        <a href="home.html">HOME</a>
+        <a href="medicines.html">MEDICINES</a>
+        <a href="stock.html">STOCK</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="sales.html">SALES</a>
+        <a href="report.html">REPORT</a>
+        <a href="users.html">USERS</a>
+        
+    </div>
+    <body class="medicinepage">
+       <div class="top-bar">
+        <h2>CATEGORIES</h2>
+        <div class="buttons">
+            <button onclick="manageCategories()">Manage Categories</button>
+            
+            <button onclick="addNewCategory()">+ Add New Category</button>
+        </div>
+    </div>
+
+    <div class="card-container" id="cardContainer">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="capsules.png">
+            <div class="card-content">
+                <p><h3>Name</h3> Capsule💊</p>
+                <ul class="medicine-list"></ul>
+                <p>Available Qty <span class="qty">0</span></p>
+                <button onClick="addmedicines(this)">Add medicine</button>
+                <br>
+                <button onClick="view(this)">view stock</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="tablets.png">
+            <div class="card-content">
+                <p><h3>Name</h3> Tablets💊</p>
+                <ul class="medicine-list"></ul>
+                <p>Available Qty <span class="qty">0</span></p>
+                <button onClick="addmedicines(this)">Add medicine</button>
+                <br>
+                <button onClick="view(this)">view stock</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="syrups.png">
+            <div class="card-content">
+                <p><h3>Name</h3> Syrup🍶</p>
+                <ul class="medicine-list"></ul>
+                <p>Available Qty <span class="qty">0</span></p>
+                <button onClick="addmedicines(this)">Add medicine</button>
+                <br>
+                <button onClick="view(this)">view stock</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="creams.png">
+            <div class="card-content">
+                <p><h3>Name</h3> Cream💧</p>
+                <ul class="medicine-list"></ul>
+                <p>Available Qty <span class="qty">0</span></p>
+                <button onClick="addmedicines(this)">Add medicine</button>
+                <br>
+                <button onClick="view(this)">view stock</button>
+            </div>
+        </div>
+
+        <!--card 4-->
+        <div class="card">
+            <img src="injection.png">
+            <div class="card-content">
+                <p><h3>Name</h3>Injection💉</p>
+                <ul class="medicine-list"></ul>
+                <p>Available Qty <span class="qty">0</span></p>
+                <button onClick="addmedicines(this)">Add medicine</button>
+                <br>
+                <button onClick="view(this)">view stock</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="medicines.js"></script>
+
+    </body>
+</html>

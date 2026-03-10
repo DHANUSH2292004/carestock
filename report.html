@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header class1="header">
+            <img src="logo.png" alt="logo">
+            <p>carestock</p></header>
+            
+        
+    </head>
+    <body class="homepage">  
+    <div class="navbar1">
+        <a href="home.html">HOME</a>
+        <a href="medicines.html">MEDICINES</a>
+        <a href="stock.html">STOCK</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="sales.html">SALES</a>
+        <a href="report.html">REPORT</a>
+        <a href="users.html">USERS</a>
+
+<title>Medicine Management System - Reports</title>
+<link rel="stylesheet" href="report.css">
+    </div>
+
+<body>
+
+<div class="container">
+
+<h1>Medicine Management System</h1>
+<h2>Reports Page</h2>
+
+<div class="filter">
+<label>Select Report:</label>
+
+<select id="reportType" onchange="showReport()">
+<option value="sales">Sales Report</option>
+<option value="stock">Stock Report</option>
+<option value="expiry">Expiry Report</option>
+</select>
+
+</div>
+
+
+<!-- SALES REPORT -->
+<table id="salesTable">
+<tr>
+<th>Bill ID</th>
+<th>Medicine Name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Total</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Paracetamol</td>
+<td>5</td>
+<td>10</td>
+<td>50</td>
+<td>01-03-2026</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Amoxicillin</td>
+<td>2</td>
+<td>25</td>
+<td>50</td>
+<td>02-03-2026</td>
+</tr>
+
+</table>
+
+
+
+<!-- STOCK REPORT -->
+<table id="stockTable" class="hidden">
+
+<tr>
+<th>Medicine ID</th>
+<th>Medicine Name</th>
+<th>Available Quantity</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>M01</td>
+<td>Paracetamol</td>
+<td>120</td>
+<td>Available</td>
+</tr>
+
+<tr>
+<td>M02</td>
+<td>Crocin</td>
+<td>8</td>
+<td>Low Stock</td>
+</tr>
+
+</table>
+
+
+
+<!-- EXPIRY REPORT -->
+<table id="expiryTable" class="hidden">
+
+<tr>
+<th>Medicine Name</th>
+<th>Batch No</th>
+<th>Expiry Date</th>
+<th>Quantity</th>
+</tr>
+
+<tr>
+<td>Amoxicillin</td>
+<td>B234</td>
+<td>12-04-2026</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>Dolo 650</td>
+<td>B567</td>
+<td>05-05-2026</td>
+<td>15</td>
+</tr>
+
+</table>
+
+</div>
+
+<script src="report.js"></script>
+
+</body>
+</html>

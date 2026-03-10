@@ -1,0 +1,120 @@
+<html>
+<head>
+     <header class="header">
+            <img src="logo.png" alt="logo">
+            <p>carestock</p></header>
+            
+        
+    </head>
+    <body class1="homepage">  
+    <div class="navbar1">
+        <a href="home.html">HOME</a>
+        <a href="medicines.html">MEDICINES</a>
+        <a href="stock.html">STOCK</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="sales.html">SALES</a>
+        <a href="report.html">REPORT</a>
+        <a href="users.html">USERS</a>
+
+    <link rel="stylesheet" href="sales.css">
+    </div>
+</body>
+<body class="body">
+<div class="container">
+     <h2>Medicine Billing System</h2>
+     <div class="billno">
+        <label><b>Bill No:</b></label>
+        <input type="text" id="billno"readonly>
+     </div>
+    <!-- Product Table -->
+    <table id="billTable">
+        <thead>
+            <tr>
+                <th>P_Code</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Batch</th>
+                <th>MRP</th>
+                <th>Retail Price</th>
+                <th>Expiry Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="number" class="qty" oninput="calculateAmount(this)"></td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="number" class="price" oninput="calculateAmount(this)"></td>
+                <td><input type="date"></td>
+                <td><input type="number" class="amount" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="addRow()">Add Row</button>
+
+    <div class="total-bar">
+        Total: ₹ <span id="grandTotal">0</span>
+    </div>
+
+    <br>
+
+    <!-- Customer Section -->
+    <div class="flex">
+
+        <div class="box">
+            <h4>Customer Details</h4>
+            <label>Customer Name</label>
+            <input type="text">
+
+            <label>Customer Address 1</label>
+            <input type="text">
+
+            <label>Customer Address 2</label>
+            <input type="text">
+
+            <label>Doctor</label>
+            <input type="text">
+
+            <label>Doctor Address</label>
+            <input type="text">
+
+            <label>Discount %</label>
+            <input type="number" id="discount" oninput="applyDiscount()">
+        </div>
+
+        <div class="box">
+            <h4>Billing Info</h4>
+
+            <label>Bill Type</label>
+            <select>
+                <option>C - Cash Bill</option>
+                <option>CR - Credit Bill</option>
+            </select>
+
+            <label>Customer Code</label>
+            <input type="text">
+
+            <label>Outstanding</label>
+            <input type="number">
+
+            <label>Customer Phone</label>
+            <input type="text">
+
+            <label>Customer Category</label>
+            <input type="text">
+        </div>
+
+    </div>
+
+</div>
+<div class="print">
+    <button onclick="printbill()">print Bill</button>
+
+</div>
+<script src="sales.js"></script>
+</body>
+</html>
