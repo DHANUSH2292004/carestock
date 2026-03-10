@@ -1,6 +1,6 @@
 # carestock
 💊A simple pharmacy management web application developed using HTML, CSS, and JavaScript that allows users to manage users ,suppliers, add medicines, manage stock, organize categories, and generate bills with automatic calculations.
-          <img width="1024" height="1024" alt="logo" src="https://github.com/user-attachments/assets/b9810791-b9f9-4131-8a8d-78485606690c" />
+          <img width="1000" height="1000" alt="logo" src="https://github.com/user-attachments/assets/b9810791-b9f9-4131-8a8d-78485606690c" />
 
 
 
