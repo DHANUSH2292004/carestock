@@ -64,4 +64,11 @@ function generatebillno(){
     localStorage.setItem("billnumber",billnumber);
     document.getElementById("billno").value="bill-"+billnumber;
 }
-window.onload=generatebillno;
+
+window.onload=generatebillno();
+
+//billdate
+ window.onload=function(){
+    let today=new Date().toISOString().split("T")[0];
+    document.getElementById("billdate").value=today;
+ }
