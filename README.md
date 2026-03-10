@@ -1,6 +1,6 @@
 # carestock
 💊A simple pharmacy management web application developed using HTML, CSS, and JavaScript that allows users to manage users ,suppliers, add medicines, manage stock, organize categories, and generate bills with automatic calculations.
-                                                **💊CARESTOCK**![LOGO](logo.png)
+                                                **💊CARESTOCK**![LOGO](AFD project/logo.png)
 **📌 Project Overview**
 Carestock is a web-based application developed using HTML, CSS, and JavaScript to manage medicines, suppliers, billing, and stock information in a pharmacy or medical store.
 This system helps users easily add medicines, manage stock, generate bills, and organize medicines by categories. It provides a simple and user-friendly interface to improve pharmacy management.
